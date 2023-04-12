@@ -23,11 +23,13 @@ mongoose.connection.on('error', (err) => {
 
 /*ROUTE PATH STARTS*/
 const userRoute = require('./routes/userRoute.js');
+const walletTransactionRoute = require('./routes/walletTransactionRoute.js');
 /*ROUTE PATH ENDS*/
 
 app.use(express.json());
 
 app.use('/user', userRoute);
+app.use('/wallet', walletTransactionRoute);
 
 
 
