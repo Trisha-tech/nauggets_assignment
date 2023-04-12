@@ -25,6 +25,7 @@ mongoose.connection.on('error', (err) => {
 const userRoute = require('./routes/userRoute.js');
 const walletTransactionRoute = require('./routes/walletTransactionRoute.js');
 const goldTransactionRoute = require('./routes/goldTransactionRoute.js');
+const userPortfolioRoutes = require('./routes/userPortfolioRoute.js');
 /*ROUTE PATH ENDS*/
 
 app.use(express.json());
@@ -32,6 +33,7 @@ app.use(express.json());
 app.use('/user', userRoute);
 app.use('/wallet', walletTransactionRoute);
 app.use('/gold', goldTransactionRoute);
+app.use('/userPortfolio', userPortfolioRoutes);
 
 
 app.get('/', (req, res) => {
