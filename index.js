@@ -21,7 +21,15 @@ mongoose.connection.on('error', (err) => {
 })
 /*MONGODB CONNECTION END*/
 
-app.use(express.json())
+/*ROUTE PATH STARTS*/
+const userRoute = require('./routes/userRoute.js');
+/*ROUTE PATH ENDS*/
+
+app.use(express.json());
+
+app.use('/user', userRoute);
+
+
 
 app.get('/', (req, res) => {
     res.send(`Welcome to Nauggets Assignment !!!    Made by Trisha Sahu`)
