@@ -15,7 +15,7 @@ The task is to develop a feature for a Gold Fintech app to calculate a user's po
 [![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com)
 
 
-## How To Run ?
+## 💥How To Run ?
 
 1. Create a folder at your desired location (usually at your desktop).
 
